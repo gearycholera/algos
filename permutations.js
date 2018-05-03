@@ -35,3 +35,4 @@ var getAllPermutations = function(item, allowDuplicates) {
 
 assert.deepEqual(getAllPermutations('abc').sort(), ['abc', 'acb', 'bca', 'bac', 'cab', 'cba'].sort());
 assert.deepEqual(getAllPermutations('aba', true).sort(), ['aab', 'aab', 'aba', 'aba', 'baa', 'baa'].sort());
+assert.deepEqual(getAllPermutations(123).sort(), [123,132,213,231,312,321].sort());
