@@ -1,4 +1,4 @@
-let tests = require('./tests');
+const assert = require('assert');
 
 var getAllPermutations = function(item, allowDuplicates) {
   if (allowDuplicates === undefined) allowDuplicates = false;
@@ -33,5 +33,4 @@ var getAllPermutations = function(item, allowDuplicates) {
   return (type === 'object') ? permutations.map((arr) => arr.split('')) : permutations;
 }
 
-tests.assertArraysEqual(getAllPermutations('abc', false), ['bac','bca','cba','cab','acb','abc'], 'should get all permutations of a string');
-tests.assertArraysEqual(getAllPermutations('abb', false), ['bab','bba','abb'], 'should get all permutations of a string without duplicates');
+assert.deepEqual(getAllPermutations('abc').sort(), ['abc', 'acb', 'bca', 'bac', 'cab', 'cba'].sort());
