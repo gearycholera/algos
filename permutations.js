@@ -37,3 +37,5 @@ assert.deepEqual(getAllPermutations('abc').sort(), ['abc', 'acb', 'bca', 'bac', 
 assert.deepEqual(getAllPermutations('aba', true).sort(), ['aab', 'aab', 'aba', 'aba', 'baa', 'baa'].sort());
 assert.deepEqual(getAllPermutations(123).sort(), [123,132,213,231,312,321].sort());
 assert.deepEqual(getAllPermutations(121).sort(), [121,112,211].sort());
+assert.deepEqual(getAllPermutations([1,2,3]).sort(), [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]].sort());
+
