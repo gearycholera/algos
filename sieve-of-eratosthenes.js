@@ -9,11 +9,10 @@ var sieve = function(num) {
   }
 
   for (var i = 2; i <= num; i++) {
-    console.log(i, verifyPrime(i))
     if (verifyPrime(i)) primes.push(i);
   }
 
   return primes;
 }
 
-console.log(sieve(10))
+console.log(sieve(12))
