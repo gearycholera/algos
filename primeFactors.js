@@ -5,7 +5,6 @@ function primeFactors(num) {
   for (var i = 2; i <= num; i++) {
     if (num % i === 0) factors.push(i);
   }
-
   return factors.filter((num) => isPrime(num))
 }
 
